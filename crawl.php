@@ -48,7 +48,7 @@ function insertImage($url, $src, $alt, $title) {
 function createLink($src, $url) {
 
   $scheme = parse_url($url)["scheme"]; // http
-  $host = parse_url($url)["host"]; // www.reecekenney.com
+  $host = parse_url($url)["host"]; // www.richardangapin.io
 
   if(substr($src, 0, 2) == "//") {
     $src =  $scheme . ":" . $src;
@@ -133,7 +133,7 @@ function getDetails($url) {
     if(!in_array($src, $alreadyFoundImages)) {
       $alreadyFoundImages[] = $src;
 
-      echo "INSERT: " . insertImage($url, $src, $alt, $title);
+      insertImage($url, $src, $alt, $title);
     }
 
   }
@@ -181,6 +181,6 @@ function followLinks($url) {
 
 }
 
-$startUrl = "http://www.richard.io";
+$startUrl = "http://www.richardangapin.com";
 followLinks($startUrl);
 ?>

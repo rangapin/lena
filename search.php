@@ -1,14 +1,15 @@
 <?php
 include("config.php");
+include("classes/SiteResultsProvider.php");
 
-  if(isset($_GET["term"])) {
-    $term = $_GET["term"];
-  }
-  else {
-    exit("You must enter a search term");
-  }
+if(isset($_GET["term"])) {
+  $term = $_GET["term"];
+}
+else {
+  exit("You must enter a search term");
+}
 
-  $type = isset($_GET["type"]) ? $_GET["type"] : "sites";
+$type = isset($_GET["type"]) ? $_GET["type"] : "sites";
 
 
 
@@ -42,7 +43,7 @@ include("config.php");
 
             <div class="searchBarContainer">
 
-              <input class="searchBox" type="text" name="term">
+              <input class="searchBox" type="text" name="term" value="<?php echo $term; ?>">
               <button class="searchButton">
                 <img src="assets/images/icons/search.png">
               </button>
@@ -75,10 +76,36 @@ include("config.php");
 
 
       </div>
+    </div>
 
+
+
+
+
+
+
+
+
+
+    <div class="mainResultsSection">
+
+      <?php
+      $resultsProvider = new SiteResultsProvider($con);
+
+      $numResults = $resultsProvider->getNumResults($term);
+
+      echo "<p class='resultsCount'>$numResults results found</p>";
+
+
+
+      echo $resultsProvider->getResultsHtml(1, 20, $term);
+      ?>
 
 
     </div>
+
+
+
   </div>
 
 </body>

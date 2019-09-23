@@ -3,6 +3,11 @@
 <head>
   <title>Welcome to Lena</title>
 
+  <meta name="description" content="Search the web for sites and images.">
+  <meta name="keywords" content="Search engine, doodle, websites">
+  <meta name="author" content="Richard Angapin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
@@ -14,7 +19,7 @@
     <div class="mainSection">
 
       <div class="logoContainer">
-        <img src="assets/images/lenaLogo.png">
+        <img src="assets/images/lenaLogo.png" title="Logo of our site" alt="Site logo">
       </div>
 
 
