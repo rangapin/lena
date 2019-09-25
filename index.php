@@ -4,7 +4,7 @@
   <title>Welcome to Lena</title>
 
   <meta name="description" content="Search the web for sites and images.">
-  <meta name="keywords" content="Search engine, doodle, websites">
+  <meta name="keywords" content="Search engine, lena, websites">
   <meta name="author" content="Richard Angapin">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
     <div class="mainSection">
 
       <div class="logoContainer">
-        <img src="assets/images/lenaLogo.png" title="Logo of our site" alt="Site logo">
+        <img src="assets/images/lenaLogo.png" title="Logo of the site" alt="Site logo">
       </div>
 
 
@@ -27,7 +27,7 @@
 
         <form action="search.php" method="GET">
 
-          <input class="searchBox" type="text" name="term">
+          <input class="searchBox" type="text" name="term" autocomplete="off">
           <input class="searchButton" type="submit" value="Search">
 
 

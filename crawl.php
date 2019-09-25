@@ -181,6 +181,6 @@ function followLinks($url) {
 
 }
 
-$startUrl = "http://www.richardangapin.com";
+$startUrl = "http://www.apple.com";
 followLinks($startUrl);
 ?>
