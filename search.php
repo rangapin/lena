@@ -124,8 +124,8 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 
         <div class="pageNumberContainer">
-          <img src="assets/images/pageStart.png">
-        </div>
+<!--           <img src="assets/images/lenaLogo.png">
+ -->        </div>
 
         <?php
 
@@ -173,7 +173,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
         ?>
 
         <div class="pageNumberContainer">
-          <img src="assets/images/pageEnd.png">
+          <img src="assets/images/lenaLogo.png">
         </div>
 
 
