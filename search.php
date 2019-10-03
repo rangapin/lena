@@ -124,8 +124,8 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 
         <div class="pageNumberContainer">
-<!--           <img src="assets/images/lenaLogo.png">
- -->        </div>
+          <img src="assets/images/pageStart.png">
+        </div>
 
         <?php
 
@@ -147,12 +147,14 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
           if($currentPage == $page) {
             echo "<div class='pageNumberContainer'>
+                <img src='assets/images/pageSelected.png'>
                 <span class='pageNumber'>$currentPage</span>
               </div>";
           }
           else {
             echo "<div class='pageNumberContainer'>
                 <a href='search.php?term=$term&type=$type&page=$currentPage'>
+                  <img src='assets/images/pageSelected.png'>
                   <span class='pageNumber'>$currentPage</span>
                 </a>
             </div>";
@@ -171,7 +173,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
         ?>
 
         <div class="pageNumberContainer">
-          <img src="assets/images/marlenaLogo.png">
+          <img src="assets/images/pageEnd.png">
         </div>
 
 

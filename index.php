@@ -27,7 +27,7 @@
 
         <form action="search.php" method="GET">
 
-          <input class="searchBox" type="text" name="term" autocomplete="off">
+          <input class="searchBox" type="text" name="term" autocomplete="on">
           <input class="searchButton" type="submit" value="Search">
 
 
