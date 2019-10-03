@@ -19,7 +19,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Welcome to Lena</title>
+  <title>Welcome to Marlena</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -37,7 +37,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
         <div class="logoContainer">
           <a href="index.php">
-            <img src="assets/images/lenaLogo.png">
+            <img src="assets/images/marlenaLogo.png">
           </a>
         </div>
 
@@ -147,14 +147,12 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
           if($currentPage == $page) {
             echo "<div class='pageNumberContainer'>
-                <img src='assets/images/pageSelected.png'>
                 <span class='pageNumber'>$currentPage</span>
               </div>";
           }
           else {
             echo "<div class='pageNumberContainer'>
                 <a href='search.php?term=$term&type=$type&page=$currentPage'>
-                  <img src='assets/images/page.png'>
                   <span class='pageNumber'>$currentPage</span>
                 </a>
             </div>";
@@ -173,7 +171,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
         ?>
 
         <div class="pageNumberContainer">
-          <img src="assets/images/lenaLogo.png">
+          <img src="assets/images/marlenaLogo.png">
         </div>
 
 

@@ -256,7 +256,7 @@ followLinks($site);
 
 }
 
-$startUrl = "https://www.google.com/";
+$startUrl = "https://www.lemonde.fr/";
 
 followLinks($startUrl);
 

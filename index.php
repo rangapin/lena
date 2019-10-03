@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Welcome to Lena</title>
+  <title>Welcome to Marlena</title>
 
   <meta name="description" content="Search the web for sites and images.">
-  <meta name="keywords" content="Search engine, lena, websites">
+  <meta name="keywords" content="Search engine, marlena, websites">
   <meta name="author" content="Richard Angapin">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
     <div class="mainSection">
 
       <div class="logoContainer">
-        <img src="assets/images/lenaLogo.png" title="Logo of the site" alt="Site logo">
+        <img src="assets/images/marlenaLogo.png" title="Logo of the site" alt="Site logo">
       </div>
 
 
